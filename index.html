@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Luxury AbdulRehman — Video Editor projects. High-end video editing for brands, creators, and filmmakers with cinematic precision and elegance." />
+  <meta name="keywords" content="Video Editing, Luxury Video Editor, Cinematic Edits, Brand Videos, Social Media Videos, Premiere Pro, After Effects, DaVinci Resolve" />
+  <meta name="author" content="AbdulRehman" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>AbdulRehman —  Video Editor projects</title>
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="AbdulRehman — Luxury Video Editor projects" />
+  <meta property="og:description" content="High-end video editing for brands, creators, and filmmakers who value precision, rhythm, and elegance." />
+  <meta property="og:image" content="adi.png" />
+  <meta property="og:url" content="https://AbdulRehmanjehangir.github.io/AbdulRehman_Video_Editor/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AbdulRehman — Luxury Video Editor projects" />
+  <meta name="twitter:description" content="High-end video editing for brands, creators, and filmmakers who value precision, rhythm, and elegance." />
+  <meta name="twitter:image" content="adi.png" />
+  
+  <!-- Structured Data (JSON-LD) -->
+  <script>
+  function sendToWhatsApp() {
+  // Get form and values
+  const form = document.getElementById("contactForm");
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const budget = document.getElementById("budget").value;
+  const timeline = document.getElementById("timeline").value;
+  const message = document.getElementById("message").value.trim();
+
+  // Clear previous errors
+  form.querySelectorAll(".error").forEach(el => el.textContent = "");
+
+  // Validation
+  let valid = true;
+  // Validate email (Gmail only)
+const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+if (!email) {
+  setError("email", "Please enter your email");
+  valid = false;
+} else if (!emailRegex.test(email)) {
+  setError("email", "Please enter a valid Gmail address");
+  valid = false;
+}
+
+// Validate project brief length (minimum 50 characters)
+if (!message) {
+  setError("message", "Please provide a project brief");
+  valid = false;
+} else if (message.length < 50) {
+  setError("message", "Project brief should be at least 50 characters");
+  valid = false;
+}
+
+
+  if (!name) {
+    setError("name", "Please enter your name");
+    valid = false;
+  }
+
+  if (!email || !/\S+@\S+\.\S+/.test(email)) {
+    setError("email", "Please enter a valid email");
+    valid = false;
+  }
+
+  if (!budget) {
+    setError("budget", "Please select a budget");
+    valid = false;
+  }
+
+  if (!timeline) {
+    setError("timeline", "Please select a timeline");
+    valid = false;
+  }
+
+  if (!message) {
+    setError("message", "Please provide a project brief");
+    valid = false;
+  }
+
+  if (!valid) return; // Stop if validation fails
+
+  // Construct WhatsApp message
+  const text = 
+    "📩 *Video Editing Inquiry*\n\n" +
+    "👤 Name: " + name + "\n" +
+    "📧 Email: " + email + "\n" +
+    "💰 Estimated Budget: " + budget + "\n" +
+    "⏳ Timeline: " + timeline + "\n\n" +
+    "📝 Project Brief:\n" + message + "\n\n" +
+    "🤝 *I would love to discuss and negotiate the price if possible.*";
+
+  // Open WhatsApp
+  const whatsappURL = "https://api.whatsapp.com/send?phone=923170550023&text=" + encodeURIComponent(text);
+  window.open(whatsappURL, "_blank");
+}
+
+// Helper function to show inline error messages
+function setError(fieldId, message) {
+  const group = document.getElementById(fieldId).closest(".form-group");
+  group.querySelector(".error").textContent = message;
+}
+
+  </script>
+</head>
+
+<body>
+  <div class="marquee-container" aria-label="Important announcement">
+    <div class="marquee-text">Whatsapp NO +92 317 0550023 Starting from Rs 300••••• Professional Video Editing</div>
+  </div>
+
+  <a style="margin-right: 15px;" href="https://wa.me/923170550023?text=Hi AbdulRehman,%20I%E2%80%99m%20interested%20in%20your%20video%20editing%20services."  
+   class="whatsapp-float"  
+   target="_blank" aria-label="Contact AbdulRehman on WhatsApp"> 
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"  
+        alt="WhatsApp Contact" width="50" height="50"> 
+  </a>
+
+  <!-- Header / Hero -->
+  <header class="hero" id="home">
+    <nav class="nav" role="navigation" aria-label="Main Navigation">
+      <div class="brand">
+       
+      </div>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="btn btn-outline">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content container">
+      <div class="hero-text">
+        <h1 class="headline">AbdulRehman — Video Editing Excellence</h1>
+        <p class="subhead">High-end video editing for brands, creators, and filmmakers who value precision, rhythm, and elegance.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-gold">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Request a quote</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+  <img src="adi.png" alt="AbdulRehman Video Editor projects Preview" />
+</div>
+
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>About me</h2>
+          <p>I’m AbdulRehman, a video editor specializing in cinematic cuts, luxury brand campaigns, and social-first storytelling. My work blends narrative clarity with refined pacing, premium sound design, and color that feels timeless.</p>
+          <ul class="about-highlights">
+            <li><strong>Specialties:</strong> reels, videos, lifestyle, cinematics, ads</li>
+            <li><strong>Editing tools:</strong> Premiere Pro, After Effects, DaVinci Resolve</li>
+            <li><strong>Delivery:</strong> 4K masters, social aspect ratios, color-consistent LUTs</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Book a consultation</a>
+        </div>
+        <div class="about-stats" aria-label="Editing Experience Stats">
+          <div class="stat">
+            <div class="value">120+</div>
+            <div class="label">Projects delivered</div>
+          </div>
+          <div class="stat">
+            <div class="value">35</div>
+            <div class="label">Brands served</div>
+          </div>
+          <div class="stat">
+            <div class="value">2 yrs</div>
+            <div class="label">Editing experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- projects -->
+<section id="projects" class="section projects">
+  <div class="container">
+    <div class="section-header">
+      <h2>View My Work</h2>
+      <p>Elegant cuts, modern pacing, color craftsmanship.</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="reels">reels</button>
+      <button class="filter-btn" data-filter="videos">videos</button>
+      <button class="filter-btn" data-filter="cinematics">cinematics</button>
+      <button class="filter-btn" data-filter="ads">ads</button>
+    </div>
+
+    <!-- Grids per category (JS will populate 20 each) -->
+    <div class="grid" id="grid-all"></div>
+    <div class="grid" id="grid-reels" style="display:none;"></div>
+    <div class="grid" id="grid-videos" style="display:none;"></div>
+    <div class="grid" id="grid-cinematics" style="display:none;"></div>
+    <div class="grid" id="grid-ads" style="display:none;"></div>
+  </div>
+
+  <div class="view-more-wrapper">
+    <button class="view-more-btn" id="viewMoreBtn"> View more projects </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-media">
+        <div class="video-wrapper">
+          <div class="video-wrapper">
+            <iframe id="videoFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!-- Overlay that hides YouTube title -->
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-media">
+        <iframe id="videoFrame" src="" title="projects video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Services Section -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Services</h2>
+        <p>Tailored editing for premium outcomes.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service">
+          <div class="service-head">
+            <h3>Standard Edit</h3>
+            <span class="price">Starting Rs-300</span>
+          </div>
+          <ul class="service-list">
+            <li><strong>Deliverables:</strong> 60–120s edit, color grade, sound design</li>
+            <li><strong>Revisions:</strong> Up to 2 rounds</li>
+            <li><strong>Formats:</strong> 16:9, 9:16, 1:1</li>
+          </ul>
+        </div>
+        <div class="service">
+          <div class="service-head">
+            <h3>Extended Edit</h3>
+            <span class="price">Rs-500</span>
+          </div>
+          <ul class="service-list">
+            <li><strong>Deliverables:</strong> 3–5 min video</li>
+            <li><strong>Strategy:</strong> Hook testing, pacing maps</li>
+            <li><strong>Add-ons:</strong> Motion graphics, captions, LUTs</li>
+          </ul>
+        </div>
+        <div class="service">
+          <div class="service-head">
+            <h3>Full Edit</h3>
+            <span class="price">Rs-900</span>
+          </div>
+          <ul class="service-list">
+            <li><strong>Deliverables:</strong> 5 min–1 hr video</li>
+            <li><strong>Score:</strong> Licensed music curation</li>
+            <li><strong>Master:</strong> 4K UHD final exports</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note">Custom packages available upon request.</div>
+    </div>
+  </section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="section testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>Testimonials</h2>
+      <p>Trusted by brands and creators.</p>
+    </div>
+
+    <div class="testimonial-slider slider">
+      <div class="slide active">
+        <blockquote>“Impeccable taste and pacing. Our campaign felt genuinely premium.”</blockquote>
+        <div class="cite">— Aisha, Youtuber
+        </div>
+      </div>
+      <div class="slide">
+        <blockquote>“Seamless collaboration and delivery across formats. Highly recommended.”</blockquote>
+        <div class="cite">— Omar, Brand Manager</div>
+      </div>
+      <div class="slide">
+        <blockquote>“The ads captured our story with cinematic elegance.”</blockquote>
+        <div class="cite">— Sara, Filmmaker</div>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <button class="prev">←</button>
+      <button class="next">→</button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Contact us on Whatsapp +92 317 0550023 or share your project details to receive a tailored quote.</p>
+      </div>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="e.g., Fatima Khan" required />
+            <small class="error"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <small class="error"></small>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="budget">Estimated budget</label>
+            <select id="budget" name="budget" required>
+              <option value="">Select</option>
+              <option value="Less than Rs-500....short video">Less than Rs-500....short video</option>
+              <option value="Rs-500–RS1000....normal video">Rs-500–RS1000....normal video</option>
+              <option value="Rs1000–Above....more than one hour">Rs1000–Above....more than one hour</option>
+            </select>
+            <small class="error"></small>
+          </div>
+          <div class="form-group">
+            <label for="timeline">Timeline</label>
+            <select id="timeline" name="timeline" required>
+              <option value="">Select</option>
+              <option value="1–2 days">1–2 days....short video</option>
+              <option value="1–2 days">1–2 days....mid range video</option>
+              <option value="3 days">3 days maximum....more than 1 hour</option>
+            </select>
+            <small class="error"></small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Project brief</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your brand, goals, and references…" required></textarea>
+          <small class="error"></small>
+        </div>
+        <button type="button" class="btn btn-gold" onclick="sendToWhatsApp()">Send inquiry</button>
+        <p class="form-note">By submitting, you agree to be contacted about your project.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <div class="brand">
+          <span>&nbsp;&nbsp;&nbsp;AbdulRehman</span>
+          <span class="role">Video Editor</span>
+        </div>
+        <p>Luxury-grade edits crafted with narrative clarity and timeless style.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">projects</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> AbdulRehman. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+   setTimeout(() => {
+  document.querySelectorAll('.grid .card').forEach(card => {
+    card.classList.add('projects-item');
+  });
+
+  // then initialize View More
+  const viewMoreBtn = document.getElementById("viewMoreBtn");
+  let expanded = false;
+
+  function applyLimit() {
+    const grids = document.querySelectorAll(".grid");
+    grids.forEach(grid => {
+      const items = grid.querySelectorAll(".projects-item");
+      items.forEach((item, index) => {
+        item.style.display = !expanded && index >= 6 ? "none" : "block";
+      });
+    });
+  }
+
+  applyLimit();
+
+  viewMoreBtn.addEventListener("click", () => {
+    expanded = !expanded;
+    applyLimit();
+    viewMoreBtn.textContent = expanded ? "Show less" : "View more projects";
+  });
+}, 100);
+  // Wait for full page load
+  window.addEventListener('load', () => {
+    document.body.classList.add('page-shake');
+    setTimeout(() => {
+      document.body.classList.remove('page-shake');
+    }, 800); // same as animation duration
+  });
+
+
+  </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const slides = document.querySelectorAll(".testimonial-slider .slide");
+  const prevBtn = document.querySelector(".slider-controls .prev");
+  const nextBtn = document.querySelector(".slider-controls .next");
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+  }
+
+  prevBtn.addEventListener("click", () => {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  });
+
+  nextBtn.addEventListener("click", () => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  });
+
+  // Auto-slide every 5s
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 2000);
+});
+
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+  
+
+
+
+
+
+
